@@ -252,7 +252,7 @@ body {
 }
 
 .additional-info__languages-item {
-    color: var(--secondary-text-color);
+    color: var(--secondary-text-color); 
 }
 
 
@@ -285,7 +285,6 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     transition: background 0.3s ease;
 }
-
 
 .mixer-buttons {
     display: flex;
@@ -352,7 +351,6 @@ body {
     transform: scale(1.2);
 }
 
-
 .shake-animation {
     animation: shake 0.4s ease-in-out;
 }
@@ -375,7 +373,6 @@ body {
     }
 }
 
-
 .fast-bg {
     animation: pulseBg 0.5s infinite alternate;
 }
@@ -389,8 +386,6 @@ body {
         background: #2a2a35;
     }
 }
-
-
 .infographics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
