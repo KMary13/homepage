@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Résumé</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                     </path>
                   </svg>
                 </div>
-                <span>kolmary1818@gmail.com</span>
+                <span>Email me</span>
               </a>
             </div>
 
@@ -248,8 +248,56 @@
               </div>
             </div>
           </div>
+
+          <div class="resume-section grid-container" id="beyond-the-code">
+            <div class="section-text">
+              <h3>Beyond the Code (Hobbies & Interests)</h3>
+              <p>My favorite way to reboot is through movement and nature. I love traveling and mountain hiking.
+                Climbing uphill is great training for endurance and learning how to pace yourself—skills that come in
+                incredibly handy when you're staring down a complex block of code.</p>
+              <p>On weekends, you’ll usually find me on a bike or in the woods on a "silent hunt." Honestly, mushroom
+                hunting is the ultimate practice for deep concentration. If you have the patience to spot a wild
+                mushroom expertly hidden under a layer of leaves, you will definitely find that missing comma or broken
+                logic in JavaScript much faster.</p>
+            </div>
+
+            <div class="interactive-module" id="hobby-mixer-module">
+              <h3>Interactive Hobby Mixer</h3>
+              <p class="module-subtitle">Click an activity to see how it alters my coding performance in real-time:</p>
+
+              <div class="mixer-buttons">
+                <button class="mixer-btn" data-activity="hike">⛰️ Mountain Hiking</button>
+                <button class="mixer-btn" data-activity="bike">🚴‍♂️ Cycling</button>
+                <button class="mixer-btn" data-activity="shroom">🍄 Mushroom Hunting</button>
+              </div>
+
+              <div class="mixer-results">
+                <div class="stat-bar"><span class="stat-label">Focus / Energy Level:</span>
+                  <div class="bar-outer">
+                    <div class="bar-inner" id="focus-bar" style="width: 50%;"></div>
+                  </div>
+                </div>
+                <div class="stat-bar"><span class="stat-label">Syntax Vision:</span>
+                  <div class="bar-outer">
+                    <div class="bar-inner" id="syntax-bar" style="width: 60%;"></div>
+                  </div>
+                </div>
+                <p id="mixer-output-text">"Select an activity to reboot system..."</p>
+              </div>
+              <span id="hidden-bug" style="display: none; cursor: pointer; position: absolute;">🐛</span>
+            </div>
+          </div>
         </div>
       </div>
+
+       <div class="infographics-grid">
+              <div class="info-card">💡 <strong>Pixel-Perfect Accuracy:</strong> 100% (The distance between Figma and
+                HTML is non-negotiable).</div>
+              <div class="info-card">☕ <strong>Fuel for Coding:</strong> Coffee / Bike / Pure JS in precisely balanced
+                proportions.</div>
+              <div class="info-card">🍄 <strong>Mushroom Hunting Skill:</strong> Expert Level (I spot bugs in code as
+                quickly as porcini mushrooms).</div>              
+            </div>
 
     </div>
   </main>
