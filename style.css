@@ -286,7 +286,7 @@ body {
     transition: background 0.3s ease;
 }
 
-/* Модуль 1: Mixer */
+
 .mixer-buttons {
     display: flex;
     gap: 10px;
@@ -352,7 +352,7 @@ body {
     transform: scale(1.2);
 }
 
-/* Ефект тряски екрану для Hiking */
+
 .shake-animation {
     animation: shake 0.4s ease-in-out;
 }
@@ -375,7 +375,7 @@ body {
     }
 }
 
-/* Ефект прискорення фону для Cycling */
+
 .fast-bg {
     animation: pulseBg 0.5s infinite alternate;
 }
@@ -390,106 +390,7 @@ body {
     }
 }
 
-/* Модуль 2: Pomodoro */
-.pomodoro-widget {
-    text-align: center;
-    margin: 20px 0;
-}
 
-#pomodoro-display {
-    font-size: 3rem;
-    font-weight: bold;
-    font-family: monospace;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-#pomodoro-toggle {
-    background: var(--accent-green);
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-/* Модуль 3: Comparison Slider */
-.slider-wrapper {
-    margin: 30px auto;
-    max-width: 600px;
-}
-
-.comparison-slider {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    background: #333;
-    overflow: hidden;
-    border-radius: 8px;
-    border: 2px solid #444;
-}
-
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: monospace;
-    font-size: 1.2rem;
-}
-
-.figma-side {
-    background: #2c252f;
-    color: #ff7262;
-    width: 100%;
-    z-index: 1;
-}
-
-.html-side {
-    background: #1a2332;
-    color: #4caf50;
-    width: 50%;
-    z-index: 2;
-    border-right: 2px solid #fff;
-}
-
-.badge {
-    position: absolute;
-    top: 10px;
-    padding: 4px 8px;
-    font-size: 0.75rem;
-    border-radius: 4px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-}
-
-.figma-side .badge {
-    left: 10px;
-}
-
-.html-side .badge {
-    right: 10px;
-}
-
-/* Прихований інпут поверх для керування */
-.real-slider-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 10;
-    cursor: ew-resize;
-}
-
-/* Інфографіка картки */
 .infographics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
