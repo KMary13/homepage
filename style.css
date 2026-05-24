@@ -1,6 +1,5 @@
-
 :root {
-    --primary-color: #2563eb;
+    --primary-color: #2563eb; 
     --bg-module: #1e1e28;
     --text-light: #ffffff;
     --accent-green: #10b981;
@@ -31,6 +30,7 @@ body {
     max-width: 900px;
 }
 
+/* Утиліти */
 .fh {
     display: flex;
     flex-direction: row;
@@ -45,8 +45,9 @@ body {
 
 .resume {
     margin: 50px auto;
-    border: 1px solid var(--text-light);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
     padding: 50px;
     max-width: 900px;
 }
@@ -62,7 +63,6 @@ body {
     margin-bottom: 0;
 }
 
-
 .contact-info__header,
 .contact-info__sub-header {
     text-align: center;
@@ -71,13 +71,13 @@ body {
 .contact-info__header {
     color: var(--primary-text-color);
     margin-bottom: 8px;
-   font-size: 2.2rem;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 
 .contact-info__sub-header {
     color: var(--primary-color);
-   font-weight: 500;
+    font-weight: 500;
     font-size: 1.1rem;
     margin-bottom: 30px;
 }
@@ -100,16 +100,16 @@ body {
     align-items: center;
     transition: color 0.2s ease;
 }
+
 .contact-info__item:hover {
     color: var(--primary-color);
 }
 
 .contact-info__item:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-
 .contact-info__item-icon-wrapper {
-    margin-right: 10px;
+    margin-right: 12px;
     width: 20px;
     display: flex;
     justify-content: center;
@@ -125,18 +125,17 @@ body {
 }
 
 .contact-info__item-icon {
-   height: 1.2rem;   
+    height: 1.2rem;
 }
 
 .contact-info__avatar {
     border-radius: 50%;
-   width: 120px;
+    width: 120px;
     height: 120px;
     object-fit: cover;
     border: 3px solid var(--border-color);
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
-
 
 .intro {
     display: flex;
@@ -153,7 +152,7 @@ body {
 }
 
 .intro__icon {
-    height: 1.5rem;    
+    height: 1.5rem;
 }
 
 .intro__icon path {
@@ -174,16 +173,16 @@ body {
 }
 
 .skills__text {
-    color: var(--secondary-text-color);    
+    color: var(--secondary-text-color);
 }
-
 
 .experiences {
     flex: 1 1 60%;
     margin-right: 40px;
 }
 
-.experiences__header,.additional-info__education-header, 
+.experiences__header, 
+.additional-info__education-header, 
 .additional-info__languages-header {
     color: var(--primary-text-color);
     text-align: left;
@@ -195,21 +194,21 @@ body {
 .experiences__company-header-durability {
     color: var(--durability-text-color);
     text-align: left;
-   margin-bottom: 5px;
+    margin-bottom: 5px;
     font-size: 0.9rem;
     font-weight: 500;
 }
 
 .experiences__company-header-name {
     color: var(--primary-text-color);
-   font-weight: 600;
+    font-weight: 600;
     font-size: 1.1rem;
     text-align: left;
     margin-bottom: 15px;
 }
 
 .experiences__company-project {
-     margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .experiences__company-project-role {
@@ -268,7 +267,6 @@ body {
     margin-bottom: 5px;
 }
 
-
 .resume-section {
     padding: 20px 0;
     max-width: 1100px;
@@ -315,14 +313,14 @@ body {
     transition: transform 0.2s, background 0.2s, border-color 0.2s;
 }
 
-.mixer-btn:focus {
+ .mixer-btn:focus {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
 }
 
 .mixer-btn:hover {
-   background: #475569;
+    background: #475569;
     transform: translateY(-2px);
 }
 
@@ -356,7 +354,6 @@ body {
     min-height: 60px;
     font-size: 0.95rem;
 }
-
 .infographics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -399,21 +396,9 @@ body {
 }
 
 @keyframes shake {
-
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-
-    20%,
-    60% {
-        transform: translateX(-4px);
-    }
-
-    40%,
-    80% {
-        transform: translateX(4px);
-    }
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-4px); }
+    40%, 80% { transform: translateX(4px); }
 }
 
 .fast-bg {
@@ -421,15 +406,9 @@ body {
 }
 
 @keyframes pulseBg {
-    from {
-        background: #1e1e28;
-    }
-
-    to {
-        background: #272733;
-    }
+    from { background: #1e1e28; }
+    to { background: #272733; }
 }
-
 
 @media screen and (max-width: 768px) {
     .grid-container {
@@ -444,10 +423,10 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-.fh {
+    .fh {
         flex-direction: column;
     }
-
+       
     .contact-info__block:not(:last-child) {
         margin-bottom: 25px;
         align-items: center;
