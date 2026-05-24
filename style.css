@@ -30,7 +30,6 @@ body {
     max-width: 900px;
 }
 
-/* Утиліти */
 .fh {
     display: flex;
     flex-direction: row;
@@ -176,95 +175,124 @@ body {
     color: var(--secondary-text-color);
 }
 
+.main-info {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
 .experiences {
     flex: 1 1 60%;
-    margin-right: 40px;
+    }
+
+.additional-info {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .experiences__header, 
-.additional-info__education-header, 
-.additional-info__languages-header {
+.additional-info__header, 
+.section-text__header {
     color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 20px;
     font-size: 1.4rem;
     font-weight: 600;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
 }
 
-.experiences__company-header-durability {
-    color: var(--durability-text-color);
-    text-align: left;
-    margin-bottom: 5px;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.experiences__company-header-name {
-    color: var(--primary-text-color);
-    font-weight: 600;
-    font-size: 1.1rem;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.experiences__company-project {
+.experience-item {
     margin-bottom: 25px;
 }
 
-.experiences__company-project-role {
-    color: var(--primary-color);
-    text-align: left;
-    margin-bottom: 5px;
-    font-size: 1rem;
-    font-weight: 500;
+.experience-item:last-child {
+    margin-bottom: 0;
 }
 
-.experiences__company-project-name {
-    color: var(--primary-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.experiences__company-project-responsibilities {
-    color: var(--secondary-text-color);
-    padding-left: 20px;
-}
-
-.additional-info {
-    flex: 1 1 40%;
-}
-
-.additional-info__education {
-    margin-bottom: 30px;
-}
-
-.additional-info__education-university-durability {
+.experience-item__date {
     color: var(--durability-text-color);
-    text-align: left;
-    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.experience-item__title {
+    color: var(--primary-text-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.experience-item__details {
+    color: var(--secondary-text-color);
+    text-align: justify;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.experience-item__tech {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    background-color: #eff6ff;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.education-item__date {
+    color: var(--durability-text-color);
     font-size: 0.9rem;
     font-weight: 500;
 }
 
-.additional-info__education-university-speciality {
+.education-item__degree {
     color: var(--primary-text-color);
+    font-size: 1.05rem;
     font-weight: 600;
-    text-align: left;
-    margin-bottom: 5px;
+    margin-top: 2px;
 }
 
-.additional-info__education-university-name {
+.education-item__university {
     color: var(--secondary-text-color);
+    font-size: 0.95rem;
 }
 
-.additional-info__languages {
-    margin-bottom: 20px;
+.certifications-list {
+    list-style: none;
+    padding: 0;
 }
 
-.additional-info__languages-item {
+.certification-item {
     color: var(--secondary-text-color);
-    margin-bottom: 5px;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 12px;
+}
+
+.certification-item::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.language-item {
+    color: var(--secondary-text-color);
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.section-text p {
+    color: var(--secondary-text-color);
+    text-align: justify;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
 }
 
 .resume-section {
